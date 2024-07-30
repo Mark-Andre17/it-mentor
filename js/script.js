@@ -45,7 +45,7 @@ function calcOperation(str){
 // обаботчик событий
 calc.addEventListener('click',(e) => {
     
-    if(e.target.classList.contains('calc-input')) {
+    if(e.target.tagName != 'BUTTON') {
         return;
     }
 
@@ -66,3 +66,4 @@ calc.addEventListener('click',(e) => {
             }
     }
 })
+
