@@ -56,7 +56,7 @@ calc.addEventListener('click',(e) => {
             result.value = '0';
             break;
         case '=':
-            result.value = calcOperation(result.value).toFixed(2);
+            result.value = calcOperation(result.value);
             break;
         default:
             if(result.value === '0') {
